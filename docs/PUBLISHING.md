@@ -50,3 +50,7 @@ python3 tools/prepare_release.py launcher --apk "/path/to/signed-launcher.apk"
 ```
 
 The tool tries Android SDK build-tools in the usual Mac SDK location. Supply `--apksigner /path/to/apksigner` if necessary. It records the signer certificate observed in the APK, not a trusted fingerprint. Confirm that fingerprint independently, verify the package/version and exact source revision, and review [licensing](LICENSING.md) before preparing a draft. Do not use an unsigned APK or expose private keys. The Launcher filename alone does not prove it is version 112.
+
+## Chat pilot 366 verification record
+
+The maintainer reports successful local verification of the original APK using Android build-tools 37.0.0 and all seven signer parser tests. See the [evidence record](../releases/evidence/chat-pilot-366.json). The observed certificate is not yet an independently trusted signing reference. Compare against the authorized signing certificate from the maintainer's existing key or a previously trusted authentic artifact. Do not export or upload the private key.

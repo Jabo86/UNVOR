@@ -1,0 +1,35 @@
+{
+  "component": "UNVOR Chat",
+  "version": "366",
+  "channel": "pilot",
+  "source_commit": "964bf363818f045ce8406d795adbf6771ae1491f",
+  "artifact": "UNVOR-Chat-Pilota-366.apk",
+  "sha256": "e6349776a8a2c4500c6ef600e3aa214a970ebf3d2eee48aee27a26d370907520",
+  "observed_certificate_sha256": "bb91498c1f37dd44b5087266e97a1e8ba7013de896dd2b85e16c6ef904cc42f0",
+  "evidence_origin": "Maintainer-provided terminal output; not independently executed by the documentation hub",
+  "apksigner_version": "37.0.0",
+  "apksigner_exit_code": 0,
+  "signer_count": 1,
+  "signature_schemes_reported": [
+    "v2",
+    "v3"
+  ],
+  "matches_catalog": true,
+  "apk_signature_valid_reported": true,
+  "local_parser_tests": {
+    "passed": 7,
+    "total": 7
+  },
+  "ci": {
+    "commit": "6ce33ed4057a6b75f6089a2ba438cbcacd41b45c",
+    "conclusion": "success",
+    "url": "https://github.com/Jabo86/UNVOR/actions/runs/45506317311"
+  },
+  "trusted_certificate_verified": false,
+  "publication_approved": false,
+  "limitations": [
+    "Trusted signer reference not yet established",
+    "Redistribution rights not confirmed",
+    "No release-specific device acceptance or independent security audit asserted"
+  ]
+}

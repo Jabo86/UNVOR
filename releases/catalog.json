@@ -18,11 +18,15 @@
         "name": "UNVOR-Chat-Pilota-366.apk",
         "url": "https://github.com/Jabo86/ultron-android/releases/download/ratchet-pilot-66/UNVOR-Chat-Pilota-366.apk",
         "sha256": "e6349776a8a2c4500c6ef600e3aa214a970ebf3d2eee48aee27a26d370907520",
-        "digest_evidence": "upstream_github_metadata",
+        "digest_evidence": "upstream_github_metadata_and_maintainer_reported_local_match",
         "certificate_sha256": null,
-        "signature_verified": false
+        "signature_verified": false,
+        "observed_certificate_sha256": "bb91498c1f37dd44b5087266e97a1e8ba7013de896dd2b85e16c6ef904cc42f0",
+        "apk_signature_valid_reported": true,
+        "trusted_certificate_verified": false,
+        "verification_report": "releases/evidence/chat-pilot-366.json"
       },
-      "notes": "Experimental test-account build; no independent binary or signature verification."
+      "notes": "Experimental test-account build. Maintainer reports a matching file digest and valid APK signature; independent signer trust, release rights and device acceptance remain pending."
     },
     {
       "id": "launcher",
