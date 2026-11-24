@@ -27,3 +27,9 @@ Do not uninstall an existing app merely to bypass a signature mismatch. This may
 ## Release policy
 
 Stable releases should identify the precise source commit, change summary, known limitations, supported devices, test results, SHA-256 and signing fingerprint. Experimental builds must be distinguished from stable updates.
+
+## UNVOR distribution hub
+
+The [new repository release page](https://github.com/Jabo86/UNVOR/releases) is reserved for future verified UNVOR publications. At the time of this snapshot, it has no releases. The [machine-readable catalog](../releases/catalog.json) identifies the currently published pilot in its existing upstream repository. It does not mirror binaries, certify signatures or confer redistribution rights.
+
+See the [release process](RELEASE-PROCESS.md) and [status dashboard](STATUS.md) before promoting any build.

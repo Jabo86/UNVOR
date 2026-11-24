@@ -16,3 +16,11 @@ Roadmap items describe priorities, not promised dates. A check is complete only 
 | Website integration | Public URL, verified download links and privacy controls | Pending |
 
 The development repositories retain their existing history and legal attribution. Changes to application identity and release signing require a separate migration and device testing plan.
+
+## Next release gates
+
+1. Record the exact source revision and applicable redistribution rights.
+2. Verify build identity, APK signature, signing certificate and digest.
+3. Execute applicable tests from the [test matrix](TEST-MATRIX.md), record evidence and disclose failures.
+4. Review release notes and publish to the appropriate experimental or stable channel.
+5. Update the [catalog](../releases/catalog.json) and [status dashboard](STATUS.md) only after publication is verified.

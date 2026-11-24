@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "project": "UNVOR",
+  "snapshot_date": "2026-11-24",
+  "hub": "https://github.com/Jabo86/UNVOR",
+  "components": [
+    {
+      "id": "chat",
+      "name": "UNVOR Chat",
+      "status": "published_upstream",
+      "channel": "pilot",
+      "version": "366",
+      "prerelease": true,
+      "published_at": "2026-11-24T12:15:11Z",
+      "source_commit": "964bf363818f045ce8406d795adbf6771ae1491f",
+      "release_url": "https://github.com/Jabo86/ultron-android/releases/tag/ratchet-pilot-66",
+      "asset": {
+        "name": "UNVOR-Chat-Pilota-366.apk",
+        "url": "https://github.com/Jabo86/ultron-android/releases/download/ratchet-pilot-66/UNVOR-Chat-Pilota-366.apk",
+        "sha256": "e6349776a8a2c4500c6ef600e3aa214a970ebf3d2eee48aee27a26d370907520",
+        "digest_evidence": "upstream_github_metadata",
+        "certificate_sha256": null,
+        "signature_verified": false
+      },
+      "notes": "Experimental test-account build; no independent binary or signature verification."
+    },
+    {
+      "id": "launcher",
+      "name": "UNVOR Launcher",
+      "status": "development",
+      "channel": "development",
+      "version": "112",
+      "source_url": "https://github.com/Jabo86/ultron-android/tree/fix/unvor-launcher/unvor-launcher",
+      "asset": null,
+      "notes": "Project-supplied preview; public signed APK not verified."
+    },
+    {
+      "id": "network",
+      "name": "UNVOR Network",
+      "status": "development",
+      "channel": "development",
+      "source_url": "https://github.com/Jabo86/ultron-android/tree/feature/global-node-federation",
+      "asset": null,
+      "notes": "Development branch, not verified production network."
+    },
+    {
+      "id": "web",
+      "name": "UNVOR Web",
+      "status": "planned_publication",
+      "channel": null,
+      "asset": null,
+      "notes": "Public deployment not verified."
+    }
+  ]
+}

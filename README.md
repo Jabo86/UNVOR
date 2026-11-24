@@ -3,6 +3,10 @@
 
 **An independent digital ecosystem for Android.**
 
+**Digital autonomy / Engineering transparency / Independent infrastructure**
+
+[Release catalog](releases/catalog.json) · [Engineering standards](docs/ENGINEERING.md) · [Verification dashboard](docs/STATUS.md)
+
 [**Download**](docs/DOWNLOADS.md) · [**Documentation**](docs/README.md) · [**Roadmap**](docs/ROADMAP.md) · [**Security**](SECURITY.md)
 
 English · [Italiano](docs/README.it.md) · [Español](docs/README.es.md)
@@ -37,6 +41,16 @@ English · [Italiano](docs/README.it.md) · [Español](docs/README.es.md)
 Pilot builds are experimental, not stable production releases. A separately signed public Launcher APK has not been verified. [Read the download and verification guide](docs/DOWNLOADS.md).
 
 ## Engineering & transparency
+
+| Engineering control | Evidence |
+| --- | --- |
+| Release inventory | [Machine-readable catalog](releases/catalog.json) |
+| Product acceptance | [Test matrix](docs/TEST-MATRIX.md) |
+| Release governance | [Publication checklist](docs/RELEASE-PROCESS.md) |
+| Technical design records | [Architecture decisions](docs/decisions/README.md) |
+| Verified vs. planned | [Evidence dashboard](docs/STATUS.md) |
+
+
 
 | Guide | What you will find |
 | --- | --- |
