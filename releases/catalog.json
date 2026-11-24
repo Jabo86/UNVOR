@@ -46,10 +46,13 @@
     {
       "id": "web",
       "name": "UNVOR Web",
-      "status": "planned_publication",
-      "channel": null,
+      "status": "published",
+      "channel": "pages",
       "asset": null,
-      "notes": "Public deployment not verified."
+      "notes": "GitHub Pages deployment succeeded for the recorded revision. Browser regression testing remains pending.",
+      "url": "https://jabo86.github.io/UNVOR/",
+      "source_commit": "0bd07c2c4031721962cc52138583e0d65367b18f",
+      "deployment_run": "https://github.com/Jabo86/UNVOR/actions/runs/45504438234"
     }
   ]
 }

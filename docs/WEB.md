@@ -1,18 +1,29 @@
 # UNVOR web portal
 
-[Home](../README.md) · [Website source](../index.html)
+[Home](../README.md) · [Public website](https://jabo86.github.io/UNVOR/)
 
-The original HUD V3 static portal is integrated into the repository. It uses local assets, Italian/English/Spanish translations, language preference controls and an illustrative network simulation. No live network status is represented. The site code does not include advertising or analytics scripts. Hosting may process network request information under its own terms.
+The original HUD V3 portal is now hosted on GitHub Pages. The deployment of commit `0bd07c2c4031721962cc52138583e0d65367b18f` completed successfully: [deployment evidence](https://github.com/Jabo86/UNVOR/actions/runs/45504438234).
 
-## Activate GitHub Pages
+## Source architecture
 
-1. Open [repository Pages settings](https://github.com/Jabo86/UNVOR/settings/pages).
-2. Under Build and deployment, choose **Deploy from a branch**.
-3. Select **main** and **/(root)**, then save.
-4. Check the Pages deployment in GitHub Actions and use the address reported by GitHub. The expected project address is `https://jabo86.github.io/UNVOR/`; it is not considered live until verified.
+| File | Responsibility |
+| --- | --- |
+| [index.html](../index.html) | Semantic page structure |
+| [hud.css](../web/hud.css) | Cyan HUD, layout, motion and responsive design |
+| [hud.js](../web/hud.js) | Local interactions, simulated network, Italian/English/Spanish translations and preferences |
+| [Assets](../assets/) | Local project branding and launcher preview |
+| [Catalog](../releases/catalog.json) | Distribution inventory |
 
-The `.nojekyll` file permits serving the static source directly. No third-party fonts, analytics or external script dependencies are required by the portal. Never commit credentials or signing keys.
+The portal has no live network telemetry and no advertising or analytics scripts. Hosting may process request information under its own terms. Language and consent preferences use local storage.
+
+## Local preview
+
+From the repository root, run `python3 -m http.server 8080 --bind 127.0.0.1` and open http://127.0.0.1:8080/ in a browser. The site requires no build step.
+
+## Deployment
+
+GitHub Pages is configured for this repository. The expected deployment source is main / root. Review the [Pages settings](https://github.com/Jabo86/UNVOR/settings/pages) and [Actions](https://github.com/Jabo86/UNVOR/actions) after a change. A successful deployment does not certify browser behavior.
 
 ## Verification
 
-Check desktop and mobile rendering, language switching, consent preferences, keyboard navigation, the launcher image zoom, and download destinations. The existing repository documentation workflow does not prove browser behavior or deployment success.
+The repository check validates local references, translation coverage and catalog structure. Node checks JavaScript syntax. Desktop/mobile rendering, keyboard navigation, image zoom, privacy choices and all language paths still need browser regression tests.
