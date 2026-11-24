@@ -6,6 +6,11 @@ from pathlib import Path
 import re
 import subprocess
 
+try:
+    from .apk_signer import single_signer_sha256
+except ImportError:
+    from apk_signer import single_signer_sha256
+
 def digest(value):
     normalized = value.replace(":", "").strip().lower()
     if not re.fullmatch(r"[0-9a-f]{64}", normalized):
@@ -33,9 +38,12 @@ def main():
     )
     if result.returncode:
         raise SystemExit("FAIL: APK signature verification failed\n" + result.stderr)
-    signers = re.findall(r"Signer #\d+ certificate SHA-256 digest:\s*([0-9a-fA-F:]+)", result.stdout)
-    if len(signers) != 1 or digest(signers[0]) != args.certificate_sha256:
-        raise SystemExit("FAIL: unexpected signer count or certificate fingerprint")
+    try:
+        fingerprint = single_signer_sha256(result.stdout)
+    except ValueError as exc:
+        raise SystemExit("FAIL: " + str(exc)) from exc
+    if fingerprint != args.certificate_sha256:
+        raise SystemExit("FAIL: unexpected certificate fingerprint")
     print(json.dumps({"file":args.apk.name,"sha256":h.hexdigest(),"certificate_sha256":args.certificate_sha256,"signature_verified":True,"limitations":"No source, license, compatibility or security assurance."}, indent=2))
 
 if __name__ == "__main__":

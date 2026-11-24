@@ -9,6 +9,11 @@ import shutil
 import subprocess
 import tempfile
 
+try:
+    from .apk_signer import single_signer_sha256
+except ImportError:
+    from apk_signer import single_signer_sha256
+
 ROOT = Path(__file__).resolve().parents[1]
 
 def run(args):
@@ -63,17 +68,17 @@ def main():
     if expected and sha256 != expected:
         raise SystemExit("FAIL: artifact digest differs from catalog")
     details = run([str(signer), "verify", "--verbose", "--print-certs", str(apk)])
-    certs = re.findall(r"Signer #\d+ certificate SHA-256 digest:\s*([0-9a-fA-F:]+)", details)
-    certs = [c.replace(":", "").lower() for c in certs]
-    if len(certs) != 1 or not re.fullmatch(r"[0-9a-f]{64}", certs[0]):
-        raise SystemExit("FAIL: expected exactly one APK signer")
+    try:
+        fingerprint = single_signer_sha256(details)
+    except ValueError as exc:
+        raise SystemExit("FAIL: " + str(exc)) from exc
     report = {
         "component": args.component,
         "file": apk.name,
         "sha256": sha256,
         "matches_catalog": sha256 == expected if expected else None,
         "apk_signature_valid": True,
-        "observed_certificate_sha256": certs[0],
+        "observed_certificate_sha256": fingerprint,
         "trusted_certificate_verified": False,
         "publication_approved": False,
         "limitations": "Identity, trusted signer, source/version, licensing and device tests remain separate checks."
