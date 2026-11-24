@@ -1,0 +1,19 @@
+name: Documentation feedback
+description: Correct or improve the UNVOR documentation
+title: "[Docs]: "
+body:
+  - type: markdown
+    attributes:
+      value: Do not include vulnerabilities, credentials or personal data. See SECURITY.md.
+  - type: input
+    id: page
+    attributes:
+      label: Page or section
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Problem and proposed improvement
+    validations:
+      required: true
