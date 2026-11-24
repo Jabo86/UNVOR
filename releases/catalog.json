@@ -24,9 +24,14 @@
         "observed_certificate_sha256": "bb91498c1f37dd44b5087266e97a1e8ba7013de896dd2b85e16c6ef904cc42f0",
         "apk_signature_valid_reported": true,
         "trusted_certificate_verified": false,
-        "verification_report": "releases/evidence/chat-pilot-366.json"
+        "verification_report": "releases/evidence/chat-pilot-366.json",
+        "signer_continuity": {
+          "files_checked": 14,
+          "matching_certificate_files": 14,
+          "evidence": "maintainer_reported"
+        }
       },
-      "notes": "Experimental test-account build. Maintainer reports a matching file digest and valid APK signature; independent signer trust, release rights and device acceptance remain pending."
+      "notes": "Experimental test-account build. Maintainer reports matching file digest, valid signature and matching certificate across 14 local APK files. Trusted reference provenance, publication rights and device acceptance remain pending."
     },
     {
       "id": "launcher",

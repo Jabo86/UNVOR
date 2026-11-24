@@ -28,8 +28,30 @@
   "trusted_certificate_verified": false,
   "publication_approved": false,
   "limitations": [
-    "Trusted signer reference not yet established",
+    "Signing continuity observed across 14 local files; independent trust in a previously authenticated reference remains to be confirmed",
     "Redistribution rights not confirmed",
     "No release-specific device acceptance or independent security audit asserted"
-  ]
+  ],
+  "signer_continuity": {
+    "files_checked": 14,
+    "valid_signatures_reported": 14,
+    "matching_certificate_files": 14,
+    "distinct_pilot_versions": [
+      345,
+      347,
+      348,
+      349,
+      352,
+      355,
+      356,
+      358,
+      361,
+      364,
+      365,
+      366
+    ],
+    "additional_files": "One duplicate Pilot 355 file and one legacy Chat release",
+    "source": "Maintainer-provided terminal output",
+    "trusted_reference_provenance_confirmed": false
+  }
 }

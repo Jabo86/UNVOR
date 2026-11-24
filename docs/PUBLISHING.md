@@ -54,3 +54,5 @@ The tool tries Android SDK build-tools in the usual Mac SDK location. Supply `--
 ## Chat pilot 366 verification record
 
 The maintainer reports successful local verification of the original APK using Android build-tools 37.0.0 and all seven signer parser tests. See the [evidence record](../releases/evidence/chat-pilot-366.json). The observed certificate is not yet an independently trusted signing reference. Compare against the authorized signing certificate from the maintainer's existing key or a previously trusted authentic artifact. Do not export or upload the private key.
+
+The maintainer subsequently reported that all 14 locally stored Chat APK files passed signature verification and matched the observed certificate. The sample includes a duplicate Pilot 355 and an earlier legacy release. This demonstrates reported signing continuity, not independent proof of publisher identity or rights. See the same evidence record for details.
