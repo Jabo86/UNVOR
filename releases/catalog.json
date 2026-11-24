@@ -33,7 +33,7 @@
         "signer_trust_basis": "maintainer_confirmed_authentic_prior_build",
         "redistribution_authority_confirmed_by_maintainer": true
       },
-      "notes": "Experimental test-account build. Maintainer reports matching digest, valid signature and 14/14 matching local APK files, and confirms prior authentic build provenance and redistribution authority. Draft preparation authorized; package/version, device tests and notices review remain pending.",
+      "notes": "Experimental test-account build. Maintainer reports matching digest, valid signature and 14/14 matching local APK files, and confirms prior authentic build provenance and redistribution authority. Draft preparation authorized; device tests and notices review remain pending.",
       "distribution_draft": {
         "tag": "chat-pilot-366",
         "state": "draft",
@@ -44,6 +44,17 @@
         "asset_digest_matches": true,
         "verified_via": "GitHub release metadata",
         "public_availability": false
+      },
+      "android_metadata": {
+        "application_label": "UNVOR Chat · Pilota",
+        "package": "com.ultron.messenger.pilot",
+        "version_code": 366,
+        "version_name": "3.5.20-pilot.366",
+        "min_sdk": 24,
+        "target_sdk": 36,
+        "compile_sdk": 36,
+        "source": "Maintainer-provided aapt dump badging output (SDK build-tools 37.0.0)",
+        "matches_expected": true
       }
     },
     {

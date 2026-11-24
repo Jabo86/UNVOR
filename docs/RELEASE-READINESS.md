@@ -6,7 +6,7 @@
 
 | Artifact | Available evidence | Required evidence |
 | --- | --- | --- |
-| Chat pilot 366 | Existing public upstream asset, source target and [maintainer-reported matching hash, valid signature and certificate continuity across 14 local files](../releases/evidence/chat-pilot-366.json) | Maintainer-confirmed signer provenance and redistribution authority; verified package/version, release-specific tests and required notices still pending |
+| Chat pilot 366 | Existing public upstream asset, source target and [maintainer-reported matching hash, valid signature and certificate continuity across 14 local files](../releases/evidence/chat-pilot-366.json) | Maintainer-confirmed signer provenance and redistribution authority; package/version verified via maintainer-reported manifest inspection; release-specific tests and required notices still pending |
 | Launcher | Source branch and supplied UI preview | Exact signed local APK, build source and version, digest and trusted signer, upgrade and device tests, rights and notices |
 | Network | Federation development branch | Approved source and dependency licenses, design and integration evidence, reviewed deployment guide |
 | Web | GitHub Pages deployment and static checks | Browser regression tests; license for original documentation and visuals |

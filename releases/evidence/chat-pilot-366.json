@@ -29,7 +29,7 @@
   "publication_approved": false,
   "limitations": [
     "Signer trust and redistribution authority are based on maintainer confirmation, not an independent audit or legal opinion",
-    "Package/version inspection, release-specific device acceptance and required notices review remain pending",
+    "Release-specific device acceptance and required notices review remain pending",
     "No stable release or independent security audit asserted"
   ],
   "signer_continuity": {
@@ -71,5 +71,16 @@
   "expected_android_package": "com.ultron.messenger.pilot",
   "expected_android_version_code": 366,
   "expected_android_version_name": "3.5.20-pilot.366",
-  "android_metadata_verified": false
+  "android_metadata_verified": true,
+  "android_metadata": {
+    "application_label": "UNVOR Chat · Pilota",
+    "package": "com.ultron.messenger.pilot",
+    "version_code": 366,
+    "version_name": "3.5.20-pilot.366",
+    "min_sdk": 24,
+    "target_sdk": 36,
+    "compile_sdk": 36,
+    "source": "Maintainer-provided aapt dump badging output (SDK build-tools 37.0.0)",
+    "matches_expected": true
+  }
 }

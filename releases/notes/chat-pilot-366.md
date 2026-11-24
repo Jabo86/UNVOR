@@ -18,7 +18,7 @@ The maintainer reports a matching binary digest, successful APK signature verifi
 
 ## Pending before distribution
 
-The maintainer confirmed that a prior matching APK originated from an authentic own build and that redistribution is authorized. This is a maintainer declaration, not independent legal or security certification. Confirm exact package/version, relevant device tests and required license notices before publishing. Preserve the original APK and signing identity. Do not assume upgrade compatibility solely from the matching certificate.
+The maintainer confirmed that a prior matching APK originated from an authentic own build and that redistribution is authorized. This is a maintainer declaration, not independent legal or security certification. Confirm relevant device tests and required license notices before publishing. Preserve the original APK and signing identity. Do not assume upgrade compatibility solely from the matching certificate.
 
 The upstream application is governed by its [existing license](https://github.com/Jabo86/ultron-android/blob/964bf363818f045ce8406d795adbf6771ae1491f/LICENSE). This release does not change its license or imply open-source status.
 
@@ -26,6 +26,6 @@ The upstream application is governed by its [existing license](https://github.co
 
 ## Distribution and notices
 
-A draft in the UNVOR distribution hub contains the original uploaded APK. GitHub reports a matching SHA-256. Expected pilot identity from the source configuration: `com.ultron.messenger.pilot`, version code `366`, version name `3.5.20-pilot.366`; actual manifest inspection is pending.
+A draft in the UNVOR distribution hub contains the original uploaded APK. GitHub reports a matching SHA-256. The maintainer's local manifest inspection confirms package `com.ultron.messenger.pilot`, version code `366`, version name `3.5.20-pilot.366`, application label `UNVOR Chat · Pilota`, minimum SDK 24 and target/compile SDK 36. These SDK declarations do not establish device compatibility.
 
 Review the [original NOTICE](https://github.com/Jabo86/ultron-android/blob/964bf363818f045ce8406d795adbf6771ae1491f/NOTICE) and [license](https://github.com/Jabo86/ultron-android/blob/964bf363818f045ce8406d795adbf6771ae1491f/LICENSE) together with third-party notices before publication.
