@@ -19,19 +19,21 @@
         "url": "https://github.com/Jabo86/ultron-android/releases/download/ratchet-pilot-66/UNVOR-Chat-Pilota-366.apk",
         "sha256": "e6349776a8a2c4500c6ef600e3aa214a970ebf3d2eee48aee27a26d370907520",
         "digest_evidence": "upstream_github_metadata_and_maintainer_reported_local_match",
-        "certificate_sha256": null,
-        "signature_verified": false,
+        "certificate_sha256": "bb91498c1f37dd44b5087266e97a1e8ba7013de896dd2b85e16c6ef904cc42f0",
+        "signature_verified": true,
         "observed_certificate_sha256": "bb91498c1f37dd44b5087266e97a1e8ba7013de896dd2b85e16c6ef904cc42f0",
         "apk_signature_valid_reported": true,
-        "trusted_certificate_verified": false,
+        "trusted_certificate_verified": true,
         "verification_report": "releases/evidence/chat-pilot-366.json",
         "signer_continuity": {
           "files_checked": 14,
           "matching_certificate_files": 14,
           "evidence": "maintainer_reported"
-        }
+        },
+        "signer_trust_basis": "maintainer_confirmed_authentic_prior_build",
+        "redistribution_authority_confirmed_by_maintainer": true
       },
-      "notes": "Experimental test-account build. Maintainer reports matching file digest, valid signature and matching certificate across 14 local APK files. Trusted reference provenance, publication rights and device acceptance remain pending."
+      "notes": "Experimental test-account build. Maintainer reports matching digest, valid signature and 14/14 matching local APK files, and confirms prior authentic build provenance and redistribution authority. Draft preparation authorized; package/version, device tests and notices review remain pending."
     },
     {
       "id": "launcher",

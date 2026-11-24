@@ -16,7 +16,7 @@ GitHub reports the following SHA-256 digest for the APK:
 e6349776a8a2c4500c6ef600e3aa214a970ebf3d2eee48aee27a26d370907520
 ```
 
-Compute the digest of a downloaded file on macOS using `shasum -a 256 FILE.apk` or on Linux using `sha256sum FILE.apk`. Compare the full value. The maintainer's local verification reports a matching digest and valid APK signature; see the [verification evidence](../releases/evidence/chat-pilot-366.json). The documentation hub did not independently execute that binary verification. A hash match is not proof of application security or publisher identity; verify the APK signing certificate against a trusted reference as well. A trusted reference fingerprint has not yet been established here.
+Compute the digest of a downloaded file on macOS using `shasum -a 256 FILE.apk` or on Linux using `sha256sum FILE.apk`. Compare the full value. The maintainer's local verification reports a matching digest and valid APK signature; see the [verification evidence](../releases/evidence/chat-pilot-366.json). The documentation hub did not independently execute that binary verification. A hash match is not proof of application security or publisher identity; verify the APK signing certificate against a trusted reference as well. The maintainer has confirmed authentic prior-build provenance and the matching reference fingerprint is recorded in the evidence file. This is a project trust reference, not independent third-party verification.
 
 Do not uninstall an existing app merely to bypass a signature mismatch. This may cause loss of local data. Confirm upgrade compatibility and recovery options first.
 

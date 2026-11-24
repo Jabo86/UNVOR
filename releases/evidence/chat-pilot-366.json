@@ -25,12 +25,12 @@
     "conclusion": "success",
     "url": "https://github.com/Jabo86/UNVOR/actions/runs/45506317311"
   },
-  "trusted_certificate_verified": false,
+  "trusted_certificate_verified": true,
   "publication_approved": false,
   "limitations": [
-    "Signing continuity observed across 14 local files; independent trust in a previously authenticated reference remains to be confirmed",
-    "Redistribution rights not confirmed",
-    "No release-specific device acceptance or independent security audit asserted"
+    "Signer trust and redistribution authority are based on maintainer confirmation, not an independent audit or legal opinion",
+    "Package/version inspection, release-specific device acceptance and required notices review remain pending",
+    "No stable release or independent security audit asserted"
   ],
   "signer_continuity": {
     "files_checked": 14,
@@ -52,6 +52,9 @@
     ],
     "additional_files": "One duplicate Pilot 355 file and one legacy Chat release",
     "source": "Maintainer-provided terminal output",
-    "trusted_reference_provenance_confirmed": false
-  }
+    "trusted_reference_provenance_confirmed": true
+  },
+  "trusted_certificate_basis": "Maintainer confirmed that at least one prior matching APK was an authentic own build; local comparison reported 14/14 matching valid signatures. Not independent third-party attestation.",
+  "redistribution_authority_confirmed_by_maintainer": true,
+  "draft_preparation_authorized": true
 }
