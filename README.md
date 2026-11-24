@@ -9,6 +9,8 @@
 
 [**Official website**](https://jabo86.github.io/UNVOR/) · [Web source](index.html) · [**Download**](docs/DOWNLOADS.md) · [**Documentation**](docs/README.md) · [**Roadmap**](docs/ROADMAP.md) · [**Security**](SECURITY.md)
 
+[Community discussions](https://github.com/Jabo86/UNVOR/discussions) · [Report an issue](https://github.com/Jabo86/UNVOR/issues/new/choose) · [Release readiness](docs/RELEASE-READINESS.md)
+
 English · [Italiano](docs/README.it.md) · [Español](docs/README.es.md)
 
 </div>
@@ -33,7 +35,7 @@ English · [Italiano](docs/README.it.md) · [Español](docs/README.es.md)
 
 | Component | Channel | Availability |
 | --- | --- | --- |
-| UNVOR Chat | Pilot 366 | [View pilot release](https://github.com/Jabo86/ultron-android/releases/tag/ratchet-pilot-66) |
+| UNVOR Chat | Pilot 366 | [View pilot release](https://github.com/Jabo86/ultron-android/releases/tag/ratchet-pilot-66) · [APK (pilot)](https://github.com/Jabo86/ultron-android/releases/download/ratchet-pilot-66/UNVOR-Chat-Pilota-366.apk) |
 | UNVOR Launcher | Development | [Browse source](https://github.com/Jabo86/ultron-android/tree/fix/unvor-launcher/unvor-launcher) |
 | UNVOR Network | Development | [Browse federation work](https://github.com/Jabo86/ultron-android/tree/feature/global-node-federation) |
 | UNVOR Web | Published on GitHub Pages | [Open website](https://jabo86.github.io/UNVOR/) · [Web source](web/) |

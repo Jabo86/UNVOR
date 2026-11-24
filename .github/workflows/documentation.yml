@@ -20,4 +20,4 @@ jobs:
       - run: python3 tools/check_repository.py
       - run: python3 tools/check_web.py
       - run: node --check web/hud.js
-      - run: python3 -m py_compile tools/verify_apk.py
+      - run: python3 -m py_compile tools/verify_apk.py tools/prepare_release.py

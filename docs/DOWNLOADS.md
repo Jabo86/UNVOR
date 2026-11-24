@@ -37,3 +37,5 @@ See the [release process](RELEASE-PROCESS.md) and [status dashboard](STATUS.md) 
 ## Maintainer publication
 
 Use the [APK verification and draft-release guide](PUBLISHING.md). The verification helper is local and never uploads or signs an APK. Distribution authorization and release-specific evidence remain required.
+
+The official portal and README link directly to the existing upstream pilot asset. No APK is re-hosted by this documentation hub. Maintainers can use the [local preparation tool](PUBLISHING.md#local-inspection-helper) to collect artifact and signing evidence before any draft publication.

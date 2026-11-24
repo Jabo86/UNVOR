@@ -32,3 +32,21 @@ gh release create chat-pilot-366 /path/to/UNVOR-Chat-Pilota-366.apk \
 Document that the tag in this documentation hub is not the application source revision; link to the exact upstream application commit. Include license notices, digest, signing fingerprint, test evidence, limitations, and upgrade guidance. Inspect the uploaded asset and approve the draft manually. Update the catalog only after verifying actual publication.
 
 Do not publish a Launcher release until its own signed artifact and source evidence are available. The script does not create or modify any GitHub release.
+
+## Local inspection helper
+
+Run on the maintainer's Mac from a trusted checkout of this repository:
+
+```sh
+python3 tools/prepare_release.py chat
+```
+
+This downloads only the named existing public pilot asset through GitHub CLI, independently computes its SHA-256 and compares it with the recorded digest, invokes Android's APK signature verifier and saves the result to a new local directory. It does not sign, install or publish anything.
+
+For Launcher, specify the exact local signed file:
+
+```sh
+python3 tools/prepare_release.py launcher --apk "/path/to/signed-launcher.apk"
+```
+
+The tool tries Android SDK build-tools in the usual Mac SDK location. Supply `--apksigner /path/to/apksigner` if necessary. It records the signer certificate observed in the APK, not a trusted fingerprint. Confirm that fingerprint independently, verify the package/version and exact source revision, and review [licensing](LICENSING.md) before preparing a draft. Do not use an unsigned APK or expose private keys. The Launcher filename alone does not prove it is version 112.
