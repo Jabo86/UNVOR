@@ -33,7 +33,18 @@
         "signer_trust_basis": "maintainer_confirmed_authentic_prior_build",
         "redistribution_authority_confirmed_by_maintainer": true
       },
-      "notes": "Experimental test-account build. Maintainer reports matching digest, valid signature and 14/14 matching local APK files, and confirms prior authentic build provenance and redistribution authority. Draft preparation authorized; package/version, device tests and notices review remain pending."
+      "notes": "Experimental test-account build. Maintainer reports matching digest, valid signature and 14/14 matching local APK files, and confirms prior authentic build provenance and redistribution authority. Draft preparation authorized; package/version, device tests and notices review remain pending.",
+      "distribution_draft": {
+        "tag": "chat-pilot-366",
+        "state": "draft",
+        "prerelease": true,
+        "asset_name": "UNVOR-Chat-Pilota-366.apk",
+        "asset_bytes": 40686459,
+        "asset_sha256": "e6349776a8a2c4500c6ef600e3aa214a970ebf3d2eee48aee27a26d370907520",
+        "asset_digest_matches": true,
+        "verified_via": "GitHub release metadata",
+        "public_availability": false
+      }
     },
     {
       "id": "launcher",

@@ -23,3 +23,9 @@ The maintainer confirmed that a prior matching APK originated from an authentic 
 The upstream application is governed by its [existing license](https://github.com/Jabo86/ultron-android/blob/964bf363818f045ce8406d795adbf6771ae1491f/LICENSE). This release does not change its license or imply open-source status.
 
 [Verification record](https://github.com/Jabo86/UNVOR/blob/main/releases/evidence/chat-pilot-366.json)
+
+## Distribution and notices
+
+A draft in the UNVOR distribution hub contains the original uploaded APK. GitHub reports a matching SHA-256. Expected pilot identity from the source configuration: `com.ultron.messenger.pilot`, version code `366`, version name `3.5.20-pilot.366`; actual manifest inspection is pending.
+
+Review the [original NOTICE](https://github.com/Jabo86/ultron-android/blob/964bf363818f045ce8406d795adbf6771ae1491f/NOTICE) and [license](https://github.com/Jabo86/ultron-android/blob/964bf363818f045ce8406d795adbf6771ae1491f/LICENSE) together with third-party notices before publication.

@@ -56,5 +56,20 @@
   },
   "trusted_certificate_basis": "Maintainer confirmed that at least one prior matching APK was an authentic own build; local comparison reported 14/14 matching valid signatures. Not independent third-party attestation.",
   "redistribution_authority_confirmed_by_maintainer": true,
-  "draft_preparation_authorized": true
+  "draft_preparation_authorized": true,
+  "distribution_draft": {
+    "tag": "chat-pilot-366",
+    "state": "draft",
+    "prerelease": true,
+    "asset_name": "UNVOR-Chat-Pilota-366.apk",
+    "asset_bytes": 40686459,
+    "asset_sha256": "e6349776a8a2c4500c6ef600e3aa214a970ebf3d2eee48aee27a26d370907520",
+    "asset_digest_matches": true,
+    "verified_via": "GitHub release metadata",
+    "public_availability": false
+  },
+  "expected_android_package": "com.ultron.messenger.pilot",
+  "expected_android_version_code": 366,
+  "expected_android_version_name": "3.5.20-pilot.366",
+  "android_metadata_verified": false
 }
