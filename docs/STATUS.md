@@ -10,7 +10,7 @@ Snapshot: 24 November 2026. This is a manually maintained evidence register, not
 | Chat | Pilot 366 exists upstream; release metadata identifies its source and digest | Binary signature, certificate reference, device tests, release rights |
 | Launcher | Source branch and 112 interface preview | Exact build provenance, signed APK, physical-device upgrade tests |
 | Network | Federation development branch | Peer identity, failure recovery, deployment and retention tests |
-| Web | Project design exists | Verified public deployment and links |
+| Web | HUD V3 portal source integrated into this repository | Browser regression tests and verified public deployment |
 | Open source | Existing license is source-available | Ownership, third-party obligations and approved licenses |
 | Security assurance | Security documentation and acceptance criteria | Release-specific test evidence and independent review |
 

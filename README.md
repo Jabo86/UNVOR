@@ -7,7 +7,7 @@
 
 [Release catalog](releases/catalog.json) · [Engineering standards](docs/ENGINEERING.md) · [Verification dashboard](docs/STATUS.md)
 
-[**Download**](docs/DOWNLOADS.md) · [**Documentation**](docs/README.md) · [**Roadmap**](docs/ROADMAP.md) · [**Security**](SECURITY.md)
+[**Web portal source**](index.html) · [**Download**](docs/DOWNLOADS.md) · [**Documentation**](docs/README.md) · [**Roadmap**](docs/ROADMAP.md) · [**Security**](SECURITY.md)
 
 English · [Italiano](docs/README.it.md) · [Español](docs/README.es.md)
 
@@ -36,7 +36,7 @@ English · [Italiano](docs/README.it.md) · [Español](docs/README.es.md)
 | UNVOR Chat | Pilot 366 | [View pilot release](https://github.com/Jabo86/ultron-android/releases/tag/ratchet-pilot-66) |
 | UNVOR Launcher | Development | [Browse source](https://github.com/Jabo86/ultron-android/tree/fix/unvor-launcher/unvor-launcher) |
 | UNVOR Network | Development | [Browse federation work](https://github.com/Jabo86/ultron-android/tree/feature/global-node-federation) |
-| UNVOR Web | Planned publication | No verified public URL |
+| UNVOR Web | Static portal source | [Website source](index.html) · [Deployment guide](docs/WEB.md) |
 
 Pilot builds are experimental, not stable production releases. A separately signed public Launcher APK has not been verified. [Read the download and verification guide](docs/DOWNLOADS.md).
 

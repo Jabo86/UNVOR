@@ -16,3 +16,7 @@ This documentation is a project overview, not a complete protocol specification 
 | [Release process](RELEASE-PROCESS.md) | Distribution and signing controls |
 | [Architecture decisions](decisions/README.md) | Recorded design choices and consequences |
 | [Release catalog](../releases/catalog.json) | Machine-readable inventory |
+
+## Distribution
+
+[Web portal deployment](WEB.md) · [APK verification and draft releases](PUBLISHING.md)
