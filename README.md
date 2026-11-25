@@ -7,7 +7,7 @@
 
 [Release catalog](releases/catalog.json) · [Engineering standards](docs/ENGINEERING.md) · [Verification dashboard](docs/STATUS.md)
 
-[**NEXUS 3D prototype**](nexus/index.html) · [NEXUS design](docs/NEXUS.md)
+[Factual publication policy and source review](docs/CONTENT-EVIDENCE.md)
 
 [**Official website**](https://jabo86.github.io/UNVOR/) · [Web source](index.html) · [Legacy multilingual portal](portal-legacy.html) · [**Download**](docs/DOWNLOADS.md) · [**Documentation**](docs/README.md) · [**Roadmap**](docs/ROADMAP.md) · [**Security**](SECURITY.md)
 
@@ -29,7 +29,7 @@ English · [Italiano](docs/README.it.md) · [Español](docs/README.es.md)
 <p>Android messaging with an internal contact model and a goal of reducing dependence on mandatory centralized services.</p>
 <p><a href="docs/CHAT.md">Explore Chat →</a></p>
 <h3>UNVOR Network</h3>
-<p>A relay federation project intended to support independently operated nodes without a blockchain. Network and retention properties require deployment-specific verification.</p>
+<p>A two-node forwarding laboratory, not integrated with the Chat client. Production network and retention properties are not established.</p>
 <p><a href="docs/NETWORK.md">Explore the network →</a></p>
 </td><td width="45%" align="center" valign="top"><img src="assets/launcher-112.png" alt="UNVOR Launcher 112 design preview" width="245"><br><sub>Launcher 112 · Project-supplied interface preview</sub></td></tr></table>
 

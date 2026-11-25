@@ -6,9 +6,9 @@ UNVOR Chat is an Android messaging client developed with React Native and native
 
 ## Intended experience
 
-The product direction covers one-to-one communication, groups, calls and attachment handling. The internal contact model is intended to use UNVOR identifiers: both participants must have added each other before a conversation is enabled. Actual enforcement must be tested on both client and server for each release.
+The product direction covers one-to-one communication, group modules, individual voice calls and attachment handling. The inspected pilot direct-send path checks mutual contacts, blocking and signed contact keys. A previously pinned fingerprint is checked if present; mandatory out-of-band QR verification for every path is not established. Actual enforcement must be tested on both client and server for each release.
 
-Attachments should be selected and confirmed before sending, including multiple documents. Chat input, keyboard behavior, message ordering and delivery indicators should remain consistent during sending and receiving.
+The inspected Pilot 366 ChatScreen includes multiple-document selection and direct-poll components. Confirm the full attachment selection, confirmation, cancellation and delivery path on the device. The direct-call screen explicitly disables video. Group availability depends on gateway support. Chat input, keyboard behavior, message ordering and delivery indicators should remain consistent during sending and receiving.
 
 ## Security and delivery
 
@@ -17,3 +17,5 @@ Cryptographic primitives, authentication, key lifecycle, group behavior and prot
 ## Current distribution
 
 Pilot 366 is an experimental prerelease for test accounts. It is not an audited or stable release. The [download guide](DOWNLOADS.md) explains verification and compatibility caveats.
+
+[Exact source review and limitations](CONTENT-EVIDENCE.md).

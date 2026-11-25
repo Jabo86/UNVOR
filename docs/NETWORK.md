@@ -1,28 +1,7 @@
-# UNVOR Network
+# UNVOR Network — relay laboratory
 
-[Home](../README.md) · [Federation development](https://github.com/Jabo86/ultron-android/tree/feature/global-node-federation)
+[Home](../README.md) · [Exact source](https://github.com/Jabo86/ultron-android/tree/e5646e0c304081e02a0e136620e0d27b56523e84/relay-node-lab)
 
-## Purpose
+The inspected branch contains a two-server forwarding lab, with Ed25519 node authentication, HTTPS using configured certificates, signed receipts and a transient in-memory replay cache. The process has no application database or offline queue in the lab implementation. The receiving node acknowledges opaque probe packets, not delivery to a Chat device. It is not integrated with the Chat client. The pilot uses its existing gateway. No real user traffic, active node count, global availability, offline delivery or zero infrastructure-log retention is asserted.
 
-The intended network consists of independent relay operators that forward messages between endpoints. The goal is to avoid a mandatory central service and a blockchain. People who do not operate a node should be able to connect through available public relays, subject to verified discovery, configuration and access controls.
-
-## Conceptual flow
-
-```mermaid
-flowchart LR
-    A[Sender device] -. intended protected transport .-> B[Relay A]
-    B -. federation under development .-> C[Relay B]
-    C -. delivery .-> D[Recipient device]
-```
-
-This diagram describes the design direction, not measured properties of a deployed network.
-
-## Questions that need evidence
-
-- How are relay identities established and authenticated? How are peer changes approved?
-- What happens if a relay is unreachable or malicious?
-- Which identifiers, IP addresses, delivery state and timing information are visible at each boundary?
-- What data is held temporarily, written to logs, backed up or retained after delivery?
-- How do retries, offline delivery and duplicate suppression interact with minimization goals?
-
-Relays should minimize retained information. No claim of zero metadata, guaranteed availability, full decentralization or resistance to traffic correlation should be made without deployment-specific evidence. The federation branch is a development resource, not proof of a production network.
+See the [original laboratory instructions](https://github.com/Jabo86/ultron-android/blob/e5646e0c304081e02a0e136620e0d27b56523e84/relay-node-lab/README.md) for scope and limitations. Production integration, retention, failover, authorization and delivery require separate validation. [Source review](CONTENT-EVIDENCE.md).

@@ -80,6 +80,12 @@ for path in (ROOT / "assets/nexus").glob("*.webp"):
     if header[:4] != b"RIFF" or header[8:] != b"WEBP":
         errors.append("invalid WebP: " + str(path.relative_to(ROOT)))
 
+# Prevent retired game and fake activity modules from returning to the public portal.
+for filename in ("index.html", "portal-legacy.html"):
+    page = (ROOT / filename).read_text(encoding="utf-8")
+    if re.search(r"NULL ZERO|THE AWAKENING|1\\.000\\.000|Avatar Theme Engine|MISSIONE 100|nexus/index\\.html|id=\"simulate\"|DEMO / 5 NODI", page, re.I):
+        errors.append("retired or simulated content in " + filename)
+
 if errors:
     raise SystemExit("\n".join(errors))
 print("PASS: primary portal HTML/CSS assets and legacy portal three-language translation coverage")
