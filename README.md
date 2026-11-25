@@ -7,6 +7,8 @@
 
 [Release catalog](releases/catalog.json) · [Engineering standards](docs/ENGINEERING.md) · [Verification dashboard](docs/STATUS.md)
 
+[**NEXUS 3D prototype**](nexus/index.html) · [NEXUS design](docs/NEXUS.md)
+
 [**Official website**](https://jabo86.github.io/UNVOR/) · [Web source](index.html) · [**Download**](docs/DOWNLOADS.md) · [**Documentation**](docs/README.md) · [**Roadmap**](docs/ROADMAP.md) · [**Security**](SECURITY.md)
 
 [Community discussions](https://github.com/Jabo86/UNVOR/discussions) · [Report an issue](https://github.com/Jabo86/UNVOR/issues/new/choose) · [Release readiness](docs/RELEASE-READINESS.md)
