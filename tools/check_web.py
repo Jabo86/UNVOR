@@ -30,7 +30,7 @@ class Portal(HTMLParser):
                 self.refs.append(value)
 
 portal = Portal()
-portal.feed((ROOT / "index.html").read_text(encoding="utf-8"))
+portal.feed((ROOT / "portal-legacy.html").read_text(encoding="utf-8"))
 for ref in portal.refs:
     parsed = urlsplit(ref)
     if parsed.scheme or parsed.netloc:
@@ -53,7 +53,34 @@ else:
         if not isinstance(values, list) or len(values) != 3 or not all(isinstance(v, str) and v.strip() for v in values):
             errors.append("incomplete translation: " + key)
 
+
+primary = Portal()
+primary.feed((ROOT / "index.html").read_text(encoding="utf-8"))
+for ref in primary.refs:
+    parsed = urlsplit(ref)
+    if parsed.scheme or parsed.netloc:
+        continue
+    if parsed.path:
+        path = (ROOT / unquote(parsed.path)).resolve()
+        if not path.is_relative_to(ROOT) or not path.exists():
+            errors.append("primary portal: missing local reference " + ref)
+    elif parsed.fragment and parsed.fragment not in primary.ids:
+        errors.append("primary portal: missing anchor " + ref)
+stylesheet = ROOT / "web/nexus-ecosystem.css"
+for ref in re.findall(r"url\(([^)]+)\)", stylesheet.read_text(encoding="utf-8")):
+    ref = ref.strip().strip("'\"")
+    parsed = urlsplit(ref)
+    if parsed.scheme or parsed.netloc:
+        continue
+    path = (stylesheet.parent / unquote(parsed.path)).resolve()
+    if not path.is_relative_to(ROOT) or not path.is_file():
+        errors.append("primary portal stylesheet: missing local asset " + ref)
+for path in (ROOT / "assets/nexus").glob("*.webp"):
+    header = path.read_bytes()[:12]
+    if header[:4] != b"RIFF" or header[8:] != b"WEBP":
+        errors.append("invalid WebP: " + str(path.relative_to(ROOT)))
+
 if errors:
     raise SystemExit("\n".join(errors))
-print("PASS: static HTML references and three-language translation coverage")
+print("PASS: primary portal HTML/CSS assets and legacy portal three-language translation coverage")
 print("Browser runtime and remote links require separate verification.")

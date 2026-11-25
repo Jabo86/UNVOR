@@ -27,3 +27,7 @@ GitHub Pages is configured for this repository. The expected deployment source i
 ## Verification
 
 The repository check validates local references, translation coverage and catalog structure. Node checks JavaScript syntax. Desktop/mobile rendering, keyboard navigation, image zoom, privacy choices and all language paths still need browser regression tests.
+
+## Nexus Ecosystem primary portal
+
+The approved Ecosystem Edition replaces the root landing page. Its Italian HTML content and locally hosted WebP artwork are served from [index.html](../index.html), [nexus-ecosystem.css](../web/nexus-ecosystem.css) and [assets/nexus](../assets/nexus/). The previous multilingual HUD remains available at [portal-legacy.html](../portal-legacy.html). The playable experimental prototype remains under [nexus/](../nexus/). The primary portal is a static 2D website, not a rendered 3D scene. No application binary or release has been modified. Deployment success and browser runtime checks are tracked separately.
